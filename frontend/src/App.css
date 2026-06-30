@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap');
+
+:root {
+  --primary: #0055A4;
+  --primary-hover: #004080;
+}
+
+* { font-family: 'Manrope', sans-serif; }
+h1, h2, h3, h4, .font-display { font-family: 'Outfit', sans-serif; }
+
+body { background-color: #F8FAFC; color: #0F172A; }
+
+.bg-primary { background-color: var(--primary); }
+.text-primary { color: var(--primary); }
+.border-primary { border-color: var(--primary); }
+.bg-primary-hover:hover { background-color: var(--primary-hover); }
+.hover\:bg-primary-hover:hover { background-color: var(--primary-hover); }
+.bg-primary\/10 { background-color: rgba(0, 85, 164, 0.1); }
+.bg-primary\/30 { background-color: rgba(0, 85, 164, 0.3); }
+.ring-primary\/30 { --tw-ring-color: rgba(0, 85, 164, 0.3); }
+.focus\:ring-primary\/30:focus { --tw-ring-color: rgba(0, 85, 164, 0.3); }
+.focus\:border-primary:focus { border-color: var(--primary); }
