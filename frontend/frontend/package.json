@@ -19,8 +19,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test"
+    "build": "npm install --legacy-peer-deps --no-save && react-scripts build",
+    "test": "react-scripts test",
+    "vercel-build": "npm install --legacy-peer-deps --no-save && react-scripts build"
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
